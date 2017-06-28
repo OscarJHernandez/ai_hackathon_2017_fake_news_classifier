@@ -1,6 +1,12 @@
 # ai_hackathon_2017_fake_news_classifier
 This repository contains the data files and  including the weights of the pre-trained models that were used to create a model that could detect fake news 
 
+Note: Make sure that the following training parameters always match between the training program and the main program
+dictionary_size = 3000
+data_set_size = 23723 # Take a subset of the data, max size = 23,723
+split_frac = 0.8 # The parameter that sets the train/test set size
+
+Note 2: Use python 2
 
 
 The steps of the model are as follows:
@@ -25,9 +31,9 @@ Example: Suppose the dictionary is: {the, trump, apple,ate, orange}, then the te
 * The final prediction uses all the models weighed according to their accuracy and false positive rates to give a final value and produce a number that indicates the confidence of the classification.
 
 # Running the Program
-* There is a folder containing all presaved model weights in [Insert Directory Name]
-* Open the python notebook titled [Insert the Name of the python Notebook here]. Simply follow the instructions and play with the classifier
-* To re-train the models, open [Insert the Name of the python Notebook here] and make sure to specify the correct columns, or size of the data, ect. Run the python notebook and it will train the models and save all the model data to file. The data might end up being quite large depending on your model specifications
+* There is a folder containing all presaved model weights in data_file
+* Open the python notebook titled model_loader_and_predictor. Simply follow the instructions and play with the classifier
+* To re-train the models, open model_training and make sure to specify the correct columns, or size of the data, ect. Run the python notebook and it will train the models and save all the model data to file. The data might end up being quite large depending on your model specifications
 
 # Things to Explore:
 * A better data set would improve the accuracy of the results, use real and fake news data from the same time preiod.
