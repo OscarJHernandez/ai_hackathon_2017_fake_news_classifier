@@ -24,6 +24,20 @@ Example: Suppose the dictionary is: {the, trump, apple,ate, orange}, then the te
 * I then extract the confusion matrix which tells us the correct identifications in the test training set, along with false positive, and false negative rates.
 * The final prediction uses all the models weighed according to their accuracy and false positive rates to give a final value and produce a number that indicates the confidence of the classification.
 
+# Running the Program
+* There is a folder containing all presaved model weights in [Insert Directory Name]
+* Open the python notebook titled [Insert the Name of the python Notebook here]. Simply follow the instructions and play with the classifier
+* To re-train the models, open [Insert the Name of the python Notebook here] and make sure to specify the correct columns, or size of the data, ect. Run the python notebook and it will train the models and save all the model data to file. The data might end up being quite large depending on your model specifications
+
+# Things to Explore:
+* A better data set would improve the accuracy of the results, use real and fake news data from the same time preiod.
+* Explore how the size of the dictionary effects the accuracy of the final models
+* Explore how the accuracy of the model changes by increasing the data set
+* Shuffle the data set many times and train more models based on this shuffling. Combine the results of all models that were trained using the shuffled data.
+* Can we increase the data set? I would like to have a hold-out data set to make predictions. Using recent news headlines.
+* Can we add more features to the dictionary, like sentiment analysis, in order to improve the predictions?
+
+
 
 
 
