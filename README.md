@@ -1,5 +1,8 @@
 # ai_hackathon_2017_fake_news_classifier
-This repository contains the data files and  including the weights of the pre-trained models that were used to create a model that could detect fake news headlines
+This repository contains the data files and  including the weights of the pre-trained models that were used to create a model that could detect fake news headlines.
+
+This code was part of a 2-day [Global AI hackathon](http://ai.hackathon.com/). The object was to classify news headlines into the "fake news" or "real news" categories. We used the Bag-of-words model for this purpose and used a Bayesian ensemble of classifiers to give a confindence level to the model predictions.
+
 
 Note: Make sure that the following training parameters always match between the training program and the main program
 dictionary_size = 3000
